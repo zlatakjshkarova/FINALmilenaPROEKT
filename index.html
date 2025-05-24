@@ -9,51 +9,69 @@
 </head>
 
 <body>
-    <h1>Простой менеджер расходов</h1>
+    <h1 class="was">Простой менеджер расходов</h1>
+    <div class="wrapper">
+        <div class="tovar">
 
-    <div class="tovar">
+            <h2 class="tovr">ТОВАРЫ:</h2>
+            <input class="aa" type="text" id="name" placeholder="">
 
-        <h2>товар:</h2>
-        <input class="aa" type="text" id="name" placeholder="">
-
-        <h3>цена:</h3>
-        <input class="ss" type="text" id="name2" placeholder="0">
-
-
-        <h4>категория:</h4>
-        <select class="ss" type="text" id="name3">
-            <option value="продукты">продукты</option>
-            <option value="фасфуд">фасфуд</option>
-            <option value="спорт">спорт</option>
-            <option value="напитки">напитки</option>
-        </select>
-
-        <button type="button" class="mm" id='myBtn'>добавить</button>
+            <h3 class="tovr">ЦЕНЫ:</h3>
+            <input class="ss" type="number" id="name2" placeholder="0">
 
 
+            <h4 class="tovr">КАТЕГОРИЯ:</h4>
+            <select class="ss" type="text" id="name3">
+                <option value="продукты">продукты</option>
+                <option value="фасфуд">фасфуд</option>
+                <option value="спорт">спорт</option>
+                <option value="напитки">напитки</option>
+            </select>
 
+            <button type="button" class="mm" id='myBtn'>добавить</button>
 
+            <div class="total" id="total">0</div>
+           
 
-
-        <ul id="list"></ul>
+            <ul id="list"></ul>
 
 
 
-        <div class="model" id="model">
-            <div class="model-window">
-                <p class="model-msg">
-                    удалить?
-                </p>
-                <button id='del'>удалить</button>
-                <button id='cenle'>отмена</button>
+            <div class="model" id="model">
+                <div class="model-window">
+                    <p class="model-msg">
+                        УДАЛИТЬ?
+                    </p>
+                    <button id='del'>YES</button>
+                    <button id='cenle'>NO</button>
+
+                </div>
 
             </div>
 
         </div>
+        <div class="decor">
+            <div class="canvas">
+                <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
 
+                </svg>
+            </div>
+            <div class="legend">
+                <p class="title">ДИОГРАМА РАСХОДОВ</p>
+                <ul class="caption-list">
+                    <li class="caption-item">продукты</li>
+                    <li class="caption-item">фасфуд</li>
+                    <li class="caption-item">спорт</li>
+                    <li class="caption-item">напитки</li>
+
+                </ul>
+            </div>
+        </div>
     </div>
-
-
     <script src="script.js"></script>
 </body>
 
