@@ -50,16 +50,16 @@ function Task() {
     }
 
     deleteButton.addEventListener('click', () => {
-        total = sum - +newItem.querySelector('. expense-value').textContent;
-        console.log(sum)
-        list.removeChild(newItem)
-    
+
+
         model.stley.display = 'block';
 
         function removeTask() {
             list.removeChild(newItem);
             model.style.display = 'none';
-
+            sum = sum - +newItem.querySelector('.expense-value').textContent;
+            console.log(sum)
+            list.removeChild(newItem)
 
         }
 
